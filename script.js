@@ -12,13 +12,13 @@ toggles.forEach((toggle) => {
 function checkPossibleCombination(theClickedCheckbox){
     if(good.checked && cheap.checked & fast.checked) {
         if(good == theClickedCheckbox){
-            cheap.checked = false;
-        }
-        if(cheap == theClickedCheckbox){
             fast.checked = false;
         }
-        if(fast == theClickedCheckbox){
+        if(cheap == theClickedCheckbox){
             good.checked = false;
+        }
+        if(fast == theClickedCheckbox){
+            cheap.checked = false;
         }
     }
 }
